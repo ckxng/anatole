@@ -35,7 +35,7 @@
           <a
             href="{{ $item.url }}"
             target="_blank"
-            rel="noopener"
+            rel="{{ default "noopener" $item.rel }}"
             aria-label="{{ $item.title }}"
             title="{{ $item.title }}"
           >
